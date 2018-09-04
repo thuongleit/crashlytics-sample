@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "773615755275",
+    "firebase_url": "https://samples-ff3d9.firebaseio.com",
+    "project_id": "samples-ff3d9",
+    "storage_bucket": "samples-ff3d9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:773615755275:android:ca70c648baa6b622",
+        "android_client_info": {
+          "package_name": "me.thuongle.crashlyticssample"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "773615755275-jn3hfhoma5tpn4mrhdihn6eg4d6c4ndd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATnIWySovae1Q6XHatKi4-IWkvJDi3Zxs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
