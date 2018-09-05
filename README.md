@@ -18,7 +18,7 @@ implementation 'com.jakewharton.timber:timber:4.7.1'
 - Add a custom `Timber.Tree`
 
 ```kotlin
-inner class CrashlyticsTree : Timber.Tree() {
+class CrashlyticsTree : Timber.Tree() {
 
  private val KEY_PRIORITY = "priority"
  private val KEY_TAG = "tag"
