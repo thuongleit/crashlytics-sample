@@ -11,13 +11,13 @@ This project shows how to set up [Firebase Crashlytics](https://firebase.google.
 - Install Firebase Crashlytics ([documentation](https://firebase.google.com/docs/crashlytics))
 - Install [Timber](https://github.com/JakeWharton/timber)
  
-    ```grovy
-    implementation 'com.jakewharton.timber:timber:4.7.1'
-    ``` 
+```grovy
+implementation 'com.jakewharton.timber:timber:4.7.1'
+``` 
 
 - Add a custom `Timber.Tree`
 
-    ```kotlin
+```kotlin
 inner class CrashlyticsTree : Timber.Tree() {
 
  private val KEY_PRIORITY = "priority"
@@ -41,10 +41,10 @@ inner class CrashlyticsTree : Timber.Tree() {
 			}
 		}
 	}
-    ```
+```
 - Install and integrate Firebase Crashlytics with Timber in your `Application` class
  
-    ```kotlin
+```kotlin
 val crashlytics = CrashlyticsCore.Builder()
                 .disabled(BuildConfig.DEBUG)
                 .build()
@@ -54,9 +54,9 @@ Fabric.with(this, Crashlytics.Builder().core(crashlytics).build())
  	Timber.plant(Timber.DebugTree())
  }
  Timber.plant(CrashlyticsTree())
-    ```
+```
     
-    see more at [App.kt](https://github.com/thuongleit/sample-crashlytics/blob/master/app/src/main/java/me/thuongle/crashlyticssample/App.kt)
+see more at [App.kt](https://github.com/thuongleit/sample-crashlytics/blob/master/app/src/main/java/me/thuongle/crashlyticssample/App.kt)
 
 ## How to use
 
